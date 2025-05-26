@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home - Secret Web Project</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Welcome to Your Home Dashboard</h1>
+  <p>Hello, <%= username %>! 👋</p>
+
+  <form method="POST" action="/submit-secret">
+    <label for="message">Write a secret message:</label><br>
+    <textarea name="message" id="message" placeholder="Type your secret here..." required></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <br>
+  <a href="/logout">Logout</a>
+</body>
+</html>
